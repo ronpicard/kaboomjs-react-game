@@ -1,0 +1,24 @@
+// .devcontainer/devcontainer.json
+{
+    "name": "Node.js & React Kaboom DevContainer",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "features": {
+      "ghcr.io/devcontainers/features/node:1": {
+        "version": "20"
+      }
+    },
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "dbaeumer.vscode-eslint",
+          "esbenp.prettier-vscode",
+          "ms-vscode.vscode-typescript-next"
+        ]
+      }
+    },
+    "postCreateCommand": "npm install -g create-react-app && create-react-app alien-blaster && cd alien-blaster && npm install kaboom",
+    "forwardPorts": [3000],
+    "remoteUser": "node"
+  }

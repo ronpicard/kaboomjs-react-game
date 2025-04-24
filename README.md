@@ -1,1 +1,3 @@
 fill out later...
+
+15 minutes in... few errors but beginning to make progress... pausing here for now.
